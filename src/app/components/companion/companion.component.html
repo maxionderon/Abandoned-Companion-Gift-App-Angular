@@ -1,0 +1,9 @@
+<p>{{companion.name}}</p>
+<p>{{companion.description}}</p>
+<p>{{companion.class}}</p>
+
+<ul>
+    <li *ngFor="let gift of companion.gifts">
+        <span>{{gift.type}} {{gift.reaction}}</span>
+    </li>
+</ul>
