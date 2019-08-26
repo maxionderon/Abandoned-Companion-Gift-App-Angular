@@ -8,11 +8,23 @@ import { Companion } from 'src/app/model/companion';
 })
 export class CompanionComponent implements OnInit {
 
-  @Input() companion: Companion;
+  
 
-  constructor() { }
+  @Input() companion: Companion;
+  dataSource;
+  displayedColumns: string[] = ['type', 'reaction'];
+  
+
+  constructor() { 
+
+    
+
+  }
 
   ngOnInit() {
+
+    this.dataSource = this.companion.gifts;
+
   }
 
 }
