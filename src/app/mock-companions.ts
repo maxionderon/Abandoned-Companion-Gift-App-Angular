@@ -5,7 +5,7 @@ export const COMPANIONS: Companion[] = [
     {
 
         name: "Mako",
-        description: "Auf den ersten Blick scheint Makos Verhältnis zu Braden mehr wie das einer Tochter zu ihrem Vater zu sein und nicht nur durch die Zugehörigkeit zu einem Team professioneller Kopfgeldjäger definiert zu werden - und so fern ab von der Wahrheit ist diese Einschätzung auch nicht. Mako wuchs in den Schatten von Nar Shaddaas Unterwelt als obdachlose Waise auf, die eine unglaubliche Begabung für Computer hatte. So war sie zunächst freie Hackerin, bis zu dem Tag, an dem Braden das Mädchen blutend aus einer Gasse zog und einen Arzt dafür bezahlte, ihre Blasterverbrennungen zu heilen. Braden erkannte Talent und Unglück, wenn er es sah, und so nahm er Mako unter seine Fittiche und passt seitdem auf sie auf. Mako liebt den alten Mann zwar mehr als alles andere, doch unter Bradens Schutz wird auch ihr Drang zur Unabhängigkeit in Mitleidenschaft gezogen. Vorlieben: Professionalität, Kopfgeldjäger, Credits verdienen, Freiheit, Freundlichkeit Abneigungen: Einschüchterung, Grausamkeit, Snobs",
+        description: "Auf den ersten Blick scheint Makos Verhältnis zu Braden mehr wie das einer Tochter zu ihrem Vater zu sein und nicht nur durch die Zugehörigkeit zu einem Team professioneller Kopfgeldjäger definiert zu werden - und so fern ab von der Wahrheit ist diese Einschätzung auch nicht.\n\nMako wuchs in den Schatten von Nar Shaddaas Unterwelt als obdachlose Waise auf, die eine unglaubliche Begabung für Computer hatte. So war sie zunächst freie Hackerin, bis zu dem Tag, an dem Braden das Mädchen blutend aus einer Gasse zog und einen Arzt dafür bezahlte, ihre Blasterverbrennungen zu heilen.\n\nBraden erkannte Talent und Unglück, wenn er es sah, und so nahm er Mako unter seine Fittiche und passt seitdem auf sie auf. Mako liebt den alten Mann zwar mehr als alles andere, doch unter Bradens Schutz wird auch ihr Drang zur Unabhängigkeit in Mitleidenschaft gezogen.\n\nVorlieben: Professionalität, Kopfgeldjäger, Credits verdienen, Freiheit, Freundlichkeit\nAbneigungen: Einschüchterung, Grausamkeit, Snobs",
         class: "bounty hunter",
         gifts: [
             {type: "Weapon", reaction: "Like" },
@@ -20,7 +20,7 @@ export const COMPANIONS: Companion[] = [
     {
 
         name: "Torian Cadera",
-        description: "Es zählt zu den mandalorianischen Idealvorstellungen, dass ein Krieger nach seinen eigenen Taten beurteilt wird und nicht nach denen seiner Vorfahren - doch in der Realität gelten diese Vorstellungen nur selten. \n Torian Cadera hat sein ganzes kurzes Leben mit dem Versuch verbracht, das Stigma eines Verrätersohnes loszuwerden - eine Schande, die in Anwesenheit seiner Genossen nur sehr selten vergessen wird. Doch Torian hat schon vor Langem gelernt, sich gegen Verachtung zu schützen, und die Zweifel anderer an seiner Loyalität haben ihn nur noch weiter dazu angetrieben, seine Würdigkeit zu beweisen. \n Deswegen hält sich Torian mit mehr Hingabe an die Regeln und Traditionen der Mandalorianer als die meisten anderen, die doppelt so alt sind wie er. Die Ehre aufrecht zu erhalten und Widerständen zu trotzen sind die Eckpfeiler seiner Existenz. \n Vorlieben: Herausforderungen, Ehre, Mandalorianer, Respekt \n Abneigungen: sich selbst verkaufen, Feigheit",
+        description: "Es zählt zu den mandalorianischen Idealvorstellungen, dass ein Krieger nach seinen eigenen Taten beurteilt wird und nicht nach denen seiner Vorfahren - doch in der Realität gelten diese Vorstellungen nur selten.\nTorian Cadera hat sein ganzes kurzes Leben mit dem Versuch verbracht, das Stigma eines Verrätersohnes loszuwerden - eine Schande, die in Anwesenheit seiner Genossen nur sehr selten vergessen wird. Doch Torian hat schon vor Langem gelernt, sich gegen Verachtung zu schützen, und die Zweifel anderer an seiner Loyalität haben ihn nur noch weiter dazu angetrieben, seine Würdigkeit zu beweisen.\nDeswegen hält sich Torian mit mehr Hingabe an die Regeln und Traditionen der Mandalorianer als die meisten anderen, die doppelt so alt sind wie er. Die Ehre aufrecht zu erhalten und Widerständen zu trotzen sind die Eckpfeiler seiner Existenz.\nVorlieben: Herausforderungen, Ehre, Mandalorianer, Respekt\nAbneigungen: sich selbst verkaufen, Feigheit",
         class: "bounty hunter",
         gifts: [
             {type: "Weapon", reaction: "Favorite" },
@@ -29,6 +29,27 @@ export const COMPANIONS: Companion[] = [
             {type: "Cultural Artifact", reaction: "Like" },
             {type: "Trophy", reaction: "Love" },
             {type: "Underworld Good", reaction: "Like" }
+        ] 
+
+    },
+    {
+
+        name: "Blizz",
+        description: "Blizz ist unendlich neugierig und abenteuerlustig und hat sich auf seinem Heimatplaneten Tatooine immer eingeschränkt gefühlt - die endlosen Wanderdünen und die geringe Auswahl an Schrott langweilten ihn. Als der wandernde Schrottberger Slam Streever Blizz' Clan besuchte und den Jawas Arbeit als \"Frettchen\" anbot - um sie auf die Suche nach wertvollem Schrott in gefährliche und verfallene Gegenden schicken zu können - preschte Blizz vor.\n\nBlizz verbrachte mehrere Jahre in Slams Crew, bevor der alte Schrottsammler den Fehler machte, seine Dienste an die Piraten des Weißen Schlunds zu verkaufen. Es folgten Jahre der harten Arbeit unter den drohenden Blicken des Weißen Schlunds und sie nahmen den Sammlern schon bald den Grund zum Lachen - doch zuvor gab Slam seinem kleinen Begleiter den Spitznamen \"Blizz\", weil sich der kleine Jawa bei seiner ersten Begegnung mit Schnee - oder \"Weißsand\" - wie er es nannte - freute. Blizz schätzt diesen Namen, da er ihn auch an glücklichere Zeiten erinnert.\n\nVorlieben: Abenteuer, Apparate, Aufmerksamkeit, Lob, Freundschaft\nAbneigungen: gruselige Dinge, extreme Gewalt, Leute, die gemein zu ihm sind",
+        class: "bounty hunter",
+        gifts: [
+            { type: "Weapon", reaction: "Favorite" },
+            { type: "Military Gear", reaction: "Favorite" },
+            { type: "Courting", reaction: "Indifferent" },
+            { type: "Luxury", reaction: "Favorite" },
+            { type: "Technology", reaction: "Love" },
+            { type: "Republic Memorabilia",	reaction: "Favorite" },
+            { type: "Imperial Memorabilia",	reaction: "Favorite" },
+            { type: "Cultural Artifact", reaction: "Favorite" },
+            { type: "Trophy", reaction: "Favorite" },
+            { type: "Underworld  Good", reaction: "Love" },
+            { type: "Delicacies", reaction: "Indifferent" },
+            { type: "Maintenance", reaction: "Indifferent" }
         ] 
 
     }

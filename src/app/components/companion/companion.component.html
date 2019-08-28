@@ -1,9 +1,7 @@
-
-<mat-card  class="mat-elevation-z8">
+<mat-card class="mat-elevation-z8">
 
     <mat-card-title>
-
-            {{companion.name}}
+        {{companion.name}}
     </mat-card-title>
 
     <mat-card-subtitle>
@@ -13,31 +11,68 @@
     </mat-card-subtitle>
 
     <mat-card-content>
+    
 
-            <span>{{companion.description}}</span>
+            <mat-accordion>
+                <mat-expansion-panel>
+                  
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          Biography of {{companion.name}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                
+                    <div>
+                        <span style="white-space: pre-wrap;">{{companion.description}}</span>
+                    </div>
+                  
+                </mat-expansion-panel>
 
-            <ul>
-                <li *ngFor="let gift of companion.gifts">
-                    <span>{{gift.type}} {{gift.reaction}}</span>
-                </li>
-            </ul>
 
-            <table mat-table [dataSource]="dataSource"  class="mat-elevation-z8">
-
-                <ng-container matColumnDef="type">
-                    <th mat-header-cell *matHeaderCellDef> Gift Type </th>
-                    <td mat-cell *matCellDef="let gift"> {{gift.type}} </td>
-                </ng-container>
-
-                <ng-container matColumnDef="reaction">
-                    <th mat-header-cell *matHeaderCellDef> Gift reaction </th>
-                    <td mat-cell *matCellDef="let gift"> {{gift.reaction}} </td>
-                </ng-container>
+                <mat-expansion-panel>
+                  
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Gift reaction of {{companion.name}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
                     
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            
-            </table>
+                        <div fxLayout="column">
+
+                            <div class="checkboxField" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+
+                                <mat-checkbox fxFlex="25" [fxFlex.md]="25" [fxFlex.sm]="50" [fxFlex.xs]="100" [(ngModel)]="love" (change)="loveChange()">Love</mat-checkbox>
+
+                                <mat-checkbox fxFlex="25" [fxFlex.md]="25" [fxFlex.sm]="50" [fxFlex.xs]="100" [(ngModel)]="favorite" (change)="favoriteChange()">Favorite</mat-checkbox>
+                                
+                                <mat-checkbox fxFlex="25" [fxFlex.md]="25" [fxFlex.sm]="50" [fxFlex.xs]="100" [(ngModel)]="like" (change)="likeChange()">Like</mat-checkbox>
+                                
+                                <mat-checkbox fxFlex="25" [fxFlex.md]="25" [fxFlex.sm]="50" [fxFlex.xs]="100" [(ngModel)]="indifferent" (change)="indifferentChange()">Indifferent</mat-checkbox>
+
+                            </div>
+
+                            <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8" (matSortChange)="sortData($event)">
+                                
+                                <ng-container matColumnDef="type">
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Gift Type</th>
+                                    <td mat-cell *matCellDef="let gift"> {{gift.type}} </td>
+                                </ng-container>
+                
+                                <ng-container matColumnDef="reaction">
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Gift reaction</th>
+                                    <td mat-cell *matCellDef="let gift"> {{gift.reaction}} </td>
+                                </ng-container>
+                                    
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                
+                            </table>
+                            
+                        </div>
+                      
+                    </mat-expansion-panel>
+                    
+            </mat-accordion> 
 
     </mat-card-content>
 

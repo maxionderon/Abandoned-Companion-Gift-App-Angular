@@ -1,9 +1,15 @@
 
-<div  *ngFor="let companion of companions" >
+<div fxLayout="row wrap" fxLayoutAlign="start start">
 
-        <app-companion [companion]="companion"></app-companion>
+        <div fxFlex="50" [fxFlex.md]="100" [fxFlex.sm]="100" [fxFlex.xs]="100" *ngFor="let companion of companions" >
+
+                <app-companion [companion]="companion"></app-companion>
+                        
+        </div>
 
 </div>
+
+
 
 
 
