@@ -11,6 +11,8 @@ export class CompanionComponent implements OnInit {
   
 
   @Input() companion: Companion;
+
+  name: string;
   dataSource;
   displayedColumns: string[] = ['type', 'reaction'];
   
@@ -24,6 +26,7 @@ export class CompanionComponent implements OnInit {
   ngOnInit() {
 
     this.dataSource = this.companion.gifts;
+    this.name = this.companion.name;
 
   }
 
