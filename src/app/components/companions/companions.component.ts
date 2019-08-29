@@ -22,8 +22,6 @@ export class CompanionsComponent implements OnInit {
 
     this.route.paramMap.subscribe( e => {
 
-      console.log(e.get("name"));
-
       if( e.get("name") === null ) {
 
         this.getCompanions();
@@ -31,6 +29,12 @@ export class CompanionsComponent implements OnInit {
       } else {
 
         this.getCompanionByName(e.get("name"));
+
+        if(this.companions[0] === undefined ) {
+
+          this.getCompanions();
+
+        }
 
       }
 

@@ -11,8 +11,6 @@ import { Sort } from '@angular/material/sort';
 })
 export class CompanionComponent implements OnInit {
 
-  
-
   @Input() companion: Companion;
 
   //checkbox Variables

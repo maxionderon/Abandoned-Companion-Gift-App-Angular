@@ -1,0 +1,16 @@
+<table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8" (matSortChange)="sortData($event)">
+                                
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Companion Name</th>
+            <td mat-cell *matCellDef="let companion"> 
+            
+                <a [routerLink]="['/companions', companion.name]">{{companion.name}}</a> 
+            
+            </td>
+        </ng-container>
+                                    
+        <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr> -->
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+                
+</table>

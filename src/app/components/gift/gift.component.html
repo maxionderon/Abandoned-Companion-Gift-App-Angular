@@ -1,0 +1,72 @@
+<mat-card class="mat-elevation-z8">
+
+    <mat-card-title>
+            <a [routerLink]="['/gifts', giftType]" >{{giftType}}</a>
+    </mat-card-title>
+
+    <mat-card-content>
+
+        <mat-accordion>
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+
+                    <mat-panel-title>
+                        Love
+                    </mat-panel-title>
+                
+                </mat-expansion-panel-header>
+
+                <app-gift-companion-table [companions]="loveCompanions"> </app-gift-companion-table>
+
+                
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+    
+                    <mat-panel-title>
+                        Favorite
+                    </mat-panel-title>
+    
+                </mat-expansion-panel-header>
+
+                <app-gift-companion-table [companions]="favoriteCompanions"> </app-gift-companion-table>
+    
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                    
+                    <mat-panel-title>
+                        Like
+                    </mat-panel-title>
+                    
+                </mat-expansion-panel-header>
+
+                <app-gift-companion-table [companions]="likeCompanions"> </app-gift-companion-table>
+        
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+            
+                    <mat-panel-title>
+                        Indifferent
+                    </mat-panel-title>
+            
+                </mat-expansion-panel-header>
+
+                <app-gift-companion-table [companions]="indifferentCompanions"> </app-gift-companion-table>
+            
+            </mat-expansion-panel>
+
+        </mat-accordion>
+
+    </mat-card-content>
+
+</mat-card>

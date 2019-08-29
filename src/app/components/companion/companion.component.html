@@ -55,7 +55,9 @@
                                 
                                 <ng-container matColumnDef="type">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Gift Type</th>
-                                    <td mat-cell *matCellDef="let gift"> {{gift.type}} </td>
+                                    <td mat-cell *matCellDef="let gift"> 
+                                        <a [routerLink]="['/gifts', gift.type]" >{{gift.type}} </a>
+                                    </td>
                                 </ng-container>
                 
                                 <ng-container matColumnDef="reaction">

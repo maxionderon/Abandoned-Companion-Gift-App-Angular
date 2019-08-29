@@ -22,7 +22,10 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component'; 
+import { HomeComponent } from './components/home/home.component';
+import { GiftsComponent } from './components/gifts/gifts.component';
+import { GiftComponent } from './components/gift/gift.component';
+import { GiftCompanionTableComponent } from './components/gift-companion-table/gift-companion-table.component'; 
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { HomeComponent } from './components/home/home.component';
     CompanionComponent,
     ToolBarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    GiftsComponent,
+    GiftComponent,
+    GiftCompanionTableComponent
   ],
   imports: [
     BrowserModule,
