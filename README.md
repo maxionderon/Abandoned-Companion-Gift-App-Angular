@@ -9,7 +9,7 @@
     * [2.1. Angular](#2.1.)
     * [2.2. Angular Material](#2.2.)
     * [2.3. Angular FlexLayout](#2.3.)
-* [3. Change Log](#3.)
+* [3. Changelog](#3.)
 
 ---
 
@@ -41,7 +41,7 @@ The [Angular](https://angular.io) framework was used to develop.
 To archive a responsive behavior of the software [Angular FlexLayout](https://github.com/angular/flex-layout) was used.
 
 <a name="3."></a>
-## 3. Change Log
+## 3. Changelog
 
 * version 0.1.0 - beta release
 
