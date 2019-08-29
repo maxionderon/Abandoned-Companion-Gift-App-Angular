@@ -8,8 +8,7 @@
 * [2. What I used](#2.)
     * [2.1. Angular](#2.1.)
     * [2.2. Angular Material](#2.2.)
-    * [2.3. SendGrid](#2.3.)
-    * [2.4. reCAPTCHA](#2.4.)
+    * [2.3. Angular FlexLayout](#2.3.)
 * [3. Change Log](#3.)
 
 ---
