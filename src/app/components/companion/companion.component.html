@@ -1,7 +1,7 @@
 <mat-card class="mat-elevation-z8">
 
     <mat-card-title>
-        {{companion.name}}
+        <a [routerLink]="['/companions', companion.name]" >{{companion.name}}</a>
     </mat-card-title>
 
     <mat-card-subtitle>

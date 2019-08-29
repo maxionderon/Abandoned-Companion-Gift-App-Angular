@@ -15,10 +15,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatExpansionModule} from '@angular/material/expansion'; 
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatSortModule} from '@angular/material/sort'; 
+import {MatSortModule} from '@angular/material/sort';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatIconModule} from '@angular/material/icon';  
+import {MatButtonModule} from '@angular/material/button';
 
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
-import { FooterComponent } from './components/footer/footer.component'; 
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component'; 
 
 @NgModule({
   declarations: [
@@ -26,7 +30,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CompanionsComponent,
     CompanionComponent,
     ToolBarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,10 @@ import { FooterComponent } from './components/footer/footer.component';
     MatToolbarModule,
     MatExpansionModule,
     MatCheckboxModule,
-    MatSortModule
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

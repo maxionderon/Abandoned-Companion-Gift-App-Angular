@@ -52,6 +52,30 @@ export const COMPANIONS: Companion[] = [
             { type: "Maintenance", reaction: "Indifferent" }
         ] 
 
+    },
+    {
+
+        name: "Kira Carsen",
+        description: "Kira Carsen ist eine für den Jedi-Orden eher untypische Rekrutin - sie neigt zum Zynismus und hat einen sturen, eigensinnigen Charakter. Dies lässt sich zum Teil dadurch entschuldigen, dass sie ihre Padawan-Ausbildung erst als junge Erwachsene begann; Kira verbrachte den Großteil ihres Lebens davor als heimatlose Streunerin und führte ein armseliges Leben auf einigen der unangenehmsten Welten der Galaxis.\n\nDank ihrer schweren Kindheit verfügt Kira über deutlich mehr Lebenserfahrung als die meisten anderen Jedi - und eine dazu passende verbitterte Einstellung. In den Augen der anderen Jedi ist Kira jemand, der nichts ernst nimmt und sich nicht ganz auf den Weg der Jedi einlässt.\n\nWer jedoch genauer hinsieht, der entdeckt einen Schimmer von Optimismus hinter Kiras sarkastischer Fassade. Obwohl sie die Lehren des Jedi-Ordens immer wieder in Frage stellt, weiß sie das Maß an Sicherheit und Komfort zu schätzen, das der Orden ihr bietet.\n\nVorlieben: lustig sein, sich einmischen, das Imperium verspotten und besiegen\nAbneigungen: Einschüchterung, sich wie ein Söldner benehmen, mit den Sith zusammenarbeiten",
+        class: "Jedi Knight",
+        gifts: [
+            { type: "Weapon", reaction: "Indifferent" },	
+            { type: "Military Gear", reaction: "Like" },
+            { type: "Courting", reaction: "Like" },
+            { type: "Luxury", reaction: "Favorite" },
+            { type: "Technology", reaction: "Like" },
+            { type: "Republic Memorabilia", reaction: "Love" },
+            { type: "Imperial Memorabilia", reaction: "Like" },
+            { type: "Cultural Artifact", reaction: "Like" },
+            { type: "Trophy", reaction: "Like" },
+            { type: "Underworld Good", reaction: "Like" },
+            { type: "Delicacies", reaction: "Indifferent" },	
+            { type: "Maintenance", reaction: "Indifferent" }
+        ] 
+        
+        
+        
+
     }
 
 ];
