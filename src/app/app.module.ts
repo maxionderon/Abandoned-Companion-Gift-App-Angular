@@ -25,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { GiftsComponent } from './components/gifts/gifts.component';
 import { GiftComponent } from './components/gift/gift.component';
-import { GiftCompanionTableComponent } from './components/gift-companion-table/gift-companion-table.component'; 
+import { GiftCompanionTableComponent } from './components/gift-companion-table/gift-companion-table.component';
+import { SpinnerComponent } from './components/spinner/spinner.component'; 
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { GiftCompanionTableComponent } from './components/gift-companion-table/g
     HomeComponent,
     GiftsComponent,
     GiftComponent,
-    GiftCompanionTableComponent
+    GiftCompanionTableComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

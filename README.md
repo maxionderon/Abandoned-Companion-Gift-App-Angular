@@ -16,7 +16,7 @@
 <a name="1."></a>
 ## 1. Purpose of this project
 
-This Project is related to the the video game [Star Wars: The Old Republic](https://www.swtor.com). With the ["developed"](#3) application it is possible to display which companion prefers wich kind of companion gift and vis versa.
+This is a fan project which is related to the the video game [Star Wars: The Old Republic](https://www.swtor.com). With the ["developed"](#3) application it is possible to display which companion prefers wich kind of companion gift and vice versa.
 
 Another reason for this project is of course to build something with the framework [Angular](https://angular.io).
 

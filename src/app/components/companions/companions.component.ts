@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Companion } from 'src/app/model/companion';
 import { CompanionService } from 'src/app/services/companionService/companion.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationStart, Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -13,14 +14,15 @@ import { Location } from '@angular/common';
 export class CompanionsComponent implements OnInit {
 
   companions: Companion[];  
+  
 
-  constructor(private companionService: CompanionService, private route: ActivatedRoute, private location: Location) { 
-
+  constructor( private companionService: CompanionService, private route: ActivatedRoute, private location: Location ) {
+  
   }
 
   ngOnInit() {
-
-    this.route.paramMap.subscribe( e => {
+    
+    this.route.paramMap.subscribe( e => {      
 
       if( e.get("name") === null ) {
 
@@ -36,9 +38,9 @@ export class CompanionsComponent implements OnInit {
 
         }
 
-      }
+      }      
 
-    })
+    });    
 
   }
 
