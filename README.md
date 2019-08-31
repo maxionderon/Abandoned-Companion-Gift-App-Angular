@@ -16,7 +16,7 @@
 <a name="1."></a>
 ## 1. Purpose of this project
 
-This is a fan project which is related to the the video game [Star Wars: The Old Republic](https://www.swtor.com). With the ["developed"](#3) application it is possible to display which companion prefers wich kind of companion gift and vice versa.
+This is a fan project which is related to the video game [Star Wars: The Old Republic](https://www.swtor.com). With the ["developed"](#3) aapplication, it is possible to display, which companion prefers which kind of companion gift and vice versa. 
 
 Another reason for this project is of course to build something with the framework [Angular](https://angular.io).
 
@@ -28,12 +28,12 @@ This is a [beta version](#3.) of the application.
 <a name="2.1."></a>
 ### 2.1. Angular
 
-The [Angular](https://angular.io) framework was used to develop.
+The [Angular](https://angular.io) framework was used to develop the application.
 
 <a name="2.2."></a>
 ### 2.2. Angular Material
 
-[Angular Material](https://material.angular.io/) was used as UI components.
+[Angular Material](https://material.angular.io/) was used to create the UI components.
 
 <a name="2.3."></a>
 ### 2.3. Angular FlexLayout
