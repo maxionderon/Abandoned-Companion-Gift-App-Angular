@@ -8,11 +8,15 @@ import { GiftsComponent } from './components/gifts/gifts.component';
 
 const routes: Routes = [
   
-  { path: '', component: HomeComponent },
-  { path: 'companions', component: CompanionsComponent },
-  { path: 'companions/:name', component: CompanionsComponent },
-  { path: 'gifts', component: GiftsComponent },
-  { path: 'gifts/:type', component: GiftsComponent}
+  { path: '', children: [
+    { path: '', component: HomeComponent },
+    { path: 'companions', component: CompanionsComponent },
+    { path: 'companions/:name', component: CompanionsComponent },
+    { path: 'gifts', component: GiftsComponent },
+    { path: 'gifts/:type', component: GiftsComponent}
+
+  ]
+}
 
 ];
 

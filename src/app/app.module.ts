@@ -27,6 +27,7 @@ import { GiftsComponent } from './components/gifts/gifts.component';
 import { GiftComponent } from './components/gift/gift.component';
 import { GiftCompanionTableComponent } from './components/gift-companion-table/gift-companion-table.component';
 import { SpinnerComponent } from './components/spinner/spinner.component'; 
+import {MatTabsModule} from '@angular/material/tabs'; 
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MatSortModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

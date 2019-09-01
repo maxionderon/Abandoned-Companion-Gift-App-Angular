@@ -1,7 +1,7 @@
-<mat-card class="mat-elevation-z8">
+<mat-card class="mat-elevation-z8 maxionderon-card-background">
 
     <mat-card-title>
-            <a [routerLink]="['/gifts', giftType]" >{{giftType}}</a>
+        <a [routerLink]="['/gifts', giftType]">{{giftType}}</a>
     </mat-card-title>
 
     <mat-card-content>
@@ -12,57 +12,85 @@
                 <mat-expansion-panel-header>
 
                     <mat-panel-title>
-                        Love
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" class="love">favorite</mat-icon>
+                        <span>Love</span>
                     </mat-panel-title>
-                
+
                 </mat-expansion-panel-header>
 
-                <app-gift-companion-table [companions]="loveCompanions"> </app-gift-companion-table>
+                <mat-card>
+                    <mat-card-content>
 
-                
+                        <app-gift-companion-table [companions]="loveCompanions"> </app-gift-companion-table>
+
+                    </mat-card-content>
+                </mat-card>
 
             </mat-expansion-panel>
 
             <mat-expansion-panel>
 
                 <mat-expansion-panel-header>
-    
+
                     <mat-panel-title>
-                        Favorite
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" class="favorite">
+                            sentiment_very_satisfied</mat-icon>
+                        <span>Favorite</span>
                     </mat-panel-title>
-    
+
                 </mat-expansion-panel-header>
 
-                <app-gift-companion-table [companions]="favoriteCompanions"> </app-gift-companion-table>
-    
+                <mat-card>
+                    <mat-card-content>
+
+                        <app-gift-companion-table [companions]="favoriteCompanions"> </app-gift-companion-table>
+
+                    </mat-card-content>
+                </mat-card>
+
             </mat-expansion-panel>
 
             <mat-expansion-panel>
 
                 <mat-expansion-panel-header>
-                    
+
                     <mat-panel-title>
-                        Like
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" class="like">thumb_up</mat-icon>
+                        <span>Like</span>
                     </mat-panel-title>
-                    
+
                 </mat-expansion-panel-header>
 
-                <app-gift-companion-table [companions]="likeCompanions"> </app-gift-companion-table>
-        
+                <mat-card>
+                    <mat-card-content>
+
+                        <app-gift-companion-table [companions]="likeCompanions"> </app-gift-companion-table>
+
+                    </mat-card-content>
+                </mat-card>
+
             </mat-expansion-panel>
 
             <mat-expansion-panel>
 
                 <mat-expansion-panel-header>
-            
+
                     <mat-panel-title>
-                        Indifferent
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" class="indifferent">
+                            indeterminate_check_box</mat-icon>
+                        <span>Indifferent</span>
                     </mat-panel-title>
-            
+
                 </mat-expansion-panel-header>
 
-                <app-gift-companion-table [companions]="indifferentCompanions"> </app-gift-companion-table>
-            
+                <mat-card>
+                    <mat-card-content>
+
+                        <app-gift-companion-table [companions]="indifferentCompanions"> </app-gift-companion-table>
+
+                    </mat-card-content>
+                </mat-card>
+
             </mat-expansion-panel>
 
         </mat-accordion>

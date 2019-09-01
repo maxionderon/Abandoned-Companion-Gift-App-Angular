@@ -5,9 +5,7 @@ mat-card {
 }
 
 table {
-    /*
-    margin: 1%;
-    */
+    
     margin: 1% 0 1% 0;
     width: 100%;
 
@@ -16,5 +14,20 @@ table {
 .checkboxField {
 
     margin: 1%;
+
+}
+
+mat-tab {
+
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+mat-icon {
+
+    margin-right: 5%;
 
 }

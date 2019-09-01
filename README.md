@@ -43,6 +43,10 @@ To archive a responsive behavior of the software [Angular FlexLayout](https://gi
 <a name="3."></a>
 ## 3. Changelog
 
+* version 0.1.1 - beta update
+    * adder icons
+    * global theme [(maxionderon)](https://maxionderon.github.io) implemented
+    * spinner added 
 * version 0.1.0 - beta release
 
 

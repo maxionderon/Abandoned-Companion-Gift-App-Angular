@@ -6,9 +6,13 @@
 
         <div fxFlex style="margin: 1%">
 
-            <app-spinner *ngIf="false"></app-spinner>
+            <app-spinner *ngIf="loading; else router"></app-spinner>
+
+            <ng-template #router>
         
             <router-outlet></router-outlet>
+
+            </ng-template>
         
         </div>
      
