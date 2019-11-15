@@ -23,8 +23,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [              
-              "src/my-theme.scss",
+            "styles": [ 
+              {
+                "input": "src/my-theme.scss"
+              },             
               "src/styles.css"
             ],
             "scripts": []

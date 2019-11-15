@@ -41,6 +41,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
       }, 500);
       
+     
     }
 
     if (event instanceof NavigationCancel) {
